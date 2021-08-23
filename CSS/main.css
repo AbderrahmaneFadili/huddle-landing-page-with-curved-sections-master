@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-/* Variables */
+/* CSS Variables */
 :root {
   /* typography */
   --open-sans-font: "Open Sans", sans-serif;
@@ -22,4 +22,149 @@
   --light-red: hsl(0, 100%, 63%);
   --very-dark-cyan: hsl(192, 100%, 9%);
   --very-dark-blue: hsl(207, 100%, 98%);
+  --gray: rgb(186, 186, 186);
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: var(--open-sans-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: var(--poppins-font);
+}
+
+/* Container */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  padding: 2rem 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  background-color: var(--pink);
+  color: white;
+}
+
+.button--outline {
+  background-color: white;
+}
+
+.button--outline {
+  background-color: white;
+  color: var(--pink);
+  border: 2px solid var(--pink);
+}
+
+.button--rounded {
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+}
+
+.button--shadow-pink {
+  -webkit-box-shadow: 0px 0px 20px -6px var(--pink);
+  box-shadow: 0px 0px 20px -6px var(--pink);
+}
+
+.button--shadow {
+  -webkit-box-shadow: 0px 8px 20px -6px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 8px 20px -6px rgba(0, 0, 0, 0.43);
+}
+
+/* Community */
+.community {
+  padding: 9rem 0 0;
+}
+
+.community__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.community__top {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.community__top__title {
+  color: var(--very-dark-cyan);
+  margin-bottom: 1.9rem;
+  font-size: 2rem;
+}
+
+.community__top__descritpion {
+  color: var(--very-dark-cyan);
+  line-height: 1.6;
+  margin-bottom: 1.9rem;
+}
+
+.button--get-staretd {
+  margin-bottom: 7rem;
+}
+
+.community__bottom {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.community__bottom__image {
+  width: 100%;
+  height: 100%;
+}
+
+/* statistics */
+.statistics {
+  margin-top: 8rem;
+}
+
+.statistics__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.communites-formed,
+.messages-sent {
+  margin: 0 auto 6rem;
+  width: 50%;
+}
+
+.statistics__number {
+  color: var(--very-dark-cyan);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.statistics__description {
+  font-size: 1.3rem;
+  color: var(--gray);
+  text-align: center;
 }

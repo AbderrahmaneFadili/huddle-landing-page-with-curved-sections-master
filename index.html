@@ -12,9 +12,75 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./CSS/main.css" />
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- Main Header -->
+    <header class="header">
+      <div class="container header__container">
+        <a href="index.html">
+          <img class="logo" title="huddle" src="./images/logo.svg" alt="logo" />
+        </a>
+        <a
+          href="#"
+          class="button button--shadow-pink button--outline button--rounded"
+          >Try it Free</a
+        >
+      </div>
+    </header>
+
+    <!-- Community Section -->
+    <section class="community">
+      <div class="container community__container">
+        <div class="community__top">
+          <h1 class="community__top__title">
+            Build The Community Your Fans Will Love
+          </h1>
+          <p class="community__top__descritpion">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <a
+            href="#"
+            class="button button--rounded button--shadow button--get-staretd"
+            >Get Started For Free</a
+          >
+        </div>
+
+        <div class="community__bottom">
+          <img
+            src="./images/screen-mockups.svg"
+            class="community__bottom__image"
+            alt="Screen Mockups"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="statistics">
+      <div class="container statistics__container">
+        <div class="communites-formed">
+          <img
+            class="statistics__icon"
+            src="./images/icon-communities.svg"
+            alt="communities"
+          />
+          <p class="statistics__number">1.4k+</p>
+          <p class="statistics__description">Communities Formed</p>
+        </div>
+        <div class="messages-sent">
+          <img
+            class="statistics__icon"
+            src="./images/icon-messages.svg"
+            alt="messages"
+          />
+          <p class="statistics__number">2.7m+</p>
+          <p class="statistics__description">Messages Sent</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
