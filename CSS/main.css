@@ -168,3 +168,35 @@ h5 {
   color: var(--gray);
   text-align: center;
 }
+
+/* grow together */
+.grow-together {
+  background-color: var(--very-dark-blue);
+  padding: 5rem 0;
+}
+
+.grow-together__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.grow-together__image {
+  width: 100%;
+  height: 100%;
+}
+
+.grow-together__right {
+  text-align: center;
+  padding: 2rem;
+  color: var(--very-dark-cyan);
+}
+
+.grow-together__title {
+  margin: 2rem 0 1rem;
+  font-size: 1.9rem;
+}
+
+.grow-together__description {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
