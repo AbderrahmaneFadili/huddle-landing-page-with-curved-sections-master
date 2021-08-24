@@ -159,7 +159,6 @@ h5 {
 .communites-formed,
 .messages-sent {
   margin: 0 auto 6rem;
-  width: 50%;
 }
 
 .statistics__number {
@@ -363,4 +362,93 @@ h5 {
 
 .socials__icons i {
   font-size: 2rem;
+}
+
+.footer__top-pattern {
+  background: url(../images/bg-footer-top-mobile.svg) no-repeat center/cover;
+  height: 130px;
+  width: 100%;
+  position: relative;
+  bottom: 11rem;
+}
+
+/* ======== Desktop Design ========= */
+@media screen and (min-width: 1120px) {
+  /* Community */
+  .button--get-staretd,
+  .building-community__button {
+    padding: 1rem 3.7rem;
+  }
+
+  .community__top__descritpion {
+    width: 70%;
+    margin: 0 auto 2rem;
+  }
+
+  /* statistics */
+
+  .statistics__container {
+    flex-direction: row;
+    margin-bottom: 8rem;
+  }
+
+  /* Grow Together & Your Users & Flowing Conversation*/
+  .top-pattern-1 {
+    background: url(../images/bg-section-top-desktop-1.svg) no-repeat
+      center/cover;
+  }
+
+  .bottom-pattern-1 {
+    background: url(../images/bg-section-bottom-desktop-1.svg) no-repeat
+      center/cover;
+  }
+
+  .grow-together__container {
+    flex-direction: row-reverse;
+  }
+
+  .grow-together__right,
+  .your-users__right,
+  .flowing-conversation__right {
+    text-align: left;
+    width: 80%;
+  }
+
+  /* Flowing Conversation */
+  .flowing-conversation__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* your users */
+  .your-users__container {
+    flex-direction: row-reverse;
+  }
+
+  .top-pattern-2 {
+    background: url(../images/bg-section-top-desktop-2.svg) no-repeat
+      center/cover;
+  }
+
+  .bottom-pattern-2 {
+    background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat
+      center/cover;
+  }
+
+  /* Footer */
+  .footer__container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .footer__top-pattern {
+    background: url(../images/bg-footer-top-desktop.svg) no-repeat center/cover;
+    height: 150px;
+    bottom: 12rem;
+  }
+
+  .newsletter,
+  .socials {
+    width: 40%;
+  }
 }
