@@ -23,6 +23,8 @@
   --very-dark-cyan: hsl(192, 100%, 9%);
   --very-dark-blue: hsl(207, 100%, 98%);
   --gray: rgb(186, 186, 186);
+  --white: white;
+  --light-blue: rgb(78, 217, 241);
 }
 
 html {
@@ -363,6 +365,9 @@ h5 {
 .socials__icons i {
   font-size: 2rem;
 }
+.socials__icon a {
+  color: var(--very-dark-blue);
+}
 
 .footer__top-pattern {
   background: url(../images/bg-footer-top-mobile.svg) no-repeat center/cover;
@@ -405,13 +410,20 @@ h5 {
 
   .grow-together__container {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .grow-together__right,
   .your-users__right,
   .flowing-conversation__right {
     text-align: left;
-    width: 80%;
+    width: 45%;
+  }
+
+  .your-users__left,
+  .grow-together__left,
+  .flowing-conversation__left {
+    width: 45%;
   }
 
   /* Flowing Conversation */
@@ -423,6 +435,7 @@ h5 {
   /* your users */
   .your-users__container {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .top-pattern-2 {
@@ -451,4 +464,49 @@ h5 {
   .socials {
     width: 40%;
   }
+}
+
+/* ====== active states  ======= */
+.button--try-it-free {
+  position: relative;
+}
+.button--try-it-free::before {
+  content: "";
+  position: absolute;
+  width: 103%;
+  height: 109%;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  background-color: transparent;
+  left: -2px;
+  top: -2px;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+.button--try-it-free:hover::before,
+.button--try-it-free:active::before {
+  background-color: var(--white);
+  opacity: 0.5;
+}
+
+.button--get-staretd:hover,
+.building-community__button:hover,
+.form__submit:hover {
+  transition: 0.4s ease;
+  background-color: var(--light-pink);
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+}
+
+.socials__icon a:hover {
+  color: var(--light-blue);
 }
